@@ -2,7 +2,7 @@
   "name": "nodemailer-sendgridv3-transport",
   "version": "0.0.1",
   "description": "SendGrid's Web API v3 transport for Nodemailer",
-  "main": "src/sendgrid-transport.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -14,7 +14,7 @@
     "Nodemailer",
     "SendGrid"
   ],
-  "author": "Fernando Diaz Laclaustra <peke_buda@hotmail.com>",
+  "author": "Fernando Diaz Laclaustra",
   "license": "MIT",
   "dependencies": {
     "sendgrid": "^5.0.0"

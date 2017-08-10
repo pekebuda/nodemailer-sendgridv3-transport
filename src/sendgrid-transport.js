@@ -1,15 +1,16 @@
 var SendGrid 	= require('sendgrid')
-,	packageData = require('../package.json')
+,	pkg 		= require('../package.json')
+,	selftils 	= require("./selftils")
 ;
 
 
 
 
-function SendGridTransport(options){
+function SendgridTransport(options){
 	options = options || {};
 
 	this.options = options;
-	this.name = 'SendGridWebApiV3';
+	this.name = 'SendgridWebApiV3';
 	this.version = "v0.0.1";
 
 	if (!this.options.auth.api_user) {
@@ -24,11 +25,11 @@ function SendGridTransport(options){
 
 
 
-SendGridTransport.prototype.send = function(mail, callback){
+SendgridTransport.prototype.send = function(mail, callback){
 	var email = mail.data;
 
 	//reformat replyTo to replyto
-	if (email.replyTo) email.replyto = trimReplyTo(email.replyTo);
+	if (email.replyTo) email.replyto = selftils.trimReplyTo(email.replyTo);
 
 	//fetch envelope data from the message object
 	var addresses = mail.message.getAddresses();
@@ -127,22 +128,4 @@ SendGridTransport.prototype.send = function(mail, callback){
 
 	//start the recursive function
 	resolveContent();
-};
-
-
-
-
-// if in "name" <address@example.com> format, reformat to just address@example.com
-function trimReplyTo(a) {
-	if (a.indexOf('<') >= 0 && a.indexOf('>') > 0) {
-		return a.substring(a.indexOf('<')+1, a.indexOf('>'));  
-    } 
-	return a;
-}
-
-
-
-
-module.exports = function(options){
-	return new SendGridTransport(options);
 };
