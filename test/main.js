@@ -1,4 +1,4 @@
-var sgTransport = require('../src/sendgrid-transport.js')
+var sgTransport = require('../index.js')
 , 	expect 		= require('chai').expect
 ,	pkg 		= require('../package.json')
 ;

@@ -1,5 +1,5 @@
 var nodemailer  = require('nodemailer')
-,   sgTransport = require('../src/sendgrid-transport.js')
+,   sgTransport = require('../index.js')
 ;
 
 

@@ -64,13 +64,21 @@ mailer.sendMail(email, function(err, res) {
 ## Deploying
 
 * Confirm tests pass
-* Bump the version in `README.md`, `package.json`, `test/sendgrid-transport-test.js`
+* Bump the version in `README.md`, `package.json`, `test/main.js`
 * Update `CHANGELOG.md`
 * Confirm tests pass
 * Commit `Version bump vX.X.X`
 * `npm publish`
 * Push changes to GitHub
 * Release tag on GitHub `vX.X.X`
+
+
+
+
+## Credits 
+
+Based on the library [nodemailer-sendgrid-transport](https://github.com/sendgrid/nodemailer-sendgrid-transport) 
+by [SendGrid](https://sendgrid.com/).
 
 
 

@@ -1,4 +1,5 @@
 {
 	"esversion": 6,
-	"laxcomma": true
+	"laxcomma": true,
+	"sub": true
 }
