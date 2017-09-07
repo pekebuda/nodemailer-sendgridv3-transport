@@ -1,5 +1,4 @@
-var SendGridTransport 	= require("./src/sendgrid-transport")
-;
+var SendGridTransport = require("./src/sendgrid-transport");
 
 
 

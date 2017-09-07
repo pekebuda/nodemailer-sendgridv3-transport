@@ -7,6 +7,13 @@ This module is a transport plugin for [Nodemailer](https://github.com/andris9/No
 
 
 
+## Important notice 
+
+Contrary to what is stated in de description, currently this library is based on 
+[sendgrid's npm library v2](https://github.com/sendgrid/sendgrid-nodejs/tree/v2.0.0)
+
+
+
 ## Usage
 Install via npm.
 
