@@ -17,7 +17,7 @@
   "author": "Fernando Diaz Laclaustra",
   "license": "MIT",
   "dependencies": {
-    "sendgrid": "^1.8.0"
+    "sendgrid": "^2.0.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
