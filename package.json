@@ -1,6 +1,6 @@
 {
   "name": "nodemailer-sendgridv3-transport",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "SendGrid's Web API v3 transport for Nodemailer",
   "main": "index.js",
   "scripts": {
