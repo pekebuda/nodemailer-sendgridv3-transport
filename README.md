@@ -2,7 +2,10 @@
 
 Sendgrid Web API v3 transport for nodemailer
 
-This module is a transport plugin for [Nodemailer](https://github.com/andris9/Nodemailer) that makes it possible to send through [SendGrid's Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)!
+This module is a transport plugin for [Nodemailer](https://github.com/andris9/Nodemailer) 
+that makes it possible to send through [SendGrid's v3 Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) 
+using brand new [Sendgrid SDK](https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/mail) 
+for NodeJS.
 
 
 
